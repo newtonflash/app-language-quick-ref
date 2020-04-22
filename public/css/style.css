@@ -1,6 +1,8 @@
 header{
     background-color: #00a0d2;
     color: white;
+    position: fixed;
+    width: 100%;
 }
 
 header > div:first-child,
@@ -19,6 +21,11 @@ header > div,
 .features > div:nth-child(n+2){
     padding-right: 10px;
     overflow-x: auto;
+
+}
+.features > div:nth-child(n+2):hover{
+    background-color: #cDe8f6;
+
 }
 
 header > div:first-child h3 {
@@ -31,7 +38,7 @@ header > div:first-child h3 {
 }
 
 .features:hover {
-    background-color: #fef7f1;
+    background-color: #eDf8f9;
     transition: background-color 256ms linear;
 
 }
@@ -69,13 +76,12 @@ h1{
 .features{
     display: flex;
     border-bottom: 1px solid #eee;
-    padding: 10px 0 5px;
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 code{
     font-family: monospace, "courier new";
-    font-size: .9rem !important;
+    font-size: .8rem !important;
 
 }
 pre{
