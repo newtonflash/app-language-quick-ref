@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript vs python vs dart</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="sr-only sr-only-focusable">
+    <h1 class="text-center">Javascript vs Python vs Dart</h1>
+</div>
+<main class="container-flex">
+    <%- include('./header.ejs') %>
+
+    <%- include('./features/logging.ejs') %>
+    <%- include('./features/type-casting.ejs') %>
+
+    <%- include('./features/if-else-else-if.ejs') %>
+    <%- include('./features/for-loop-range.ejs') %>
+    <%- include('./features/for-loop-string.ejs') %>
+    <%- include('./features/import-packages.ejs') %>
+
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+<script>
+    jQuery.expr[':'].contains = function(a, i, m) {
+        return jQuery(a).text().toUpperCase()
+                        .indexOf(m[3].toUpperCase()) >= 0;
+    };
+
+    $("#featureSearchBox").on("input", (evt) => {
+        let searchStr =  $("#featureSearchBox").val();
+        if(searchStr === "") $(".features").show();
+         else {
+            $(".features").hide();
+            $(".features").each( (i, item) => {
+                if($(item).find(`div:first-child:contains(${searchStr})`)[0]) $(item).show();
+            });
+        }
+    });
+</script>
+</body>
+</html>
