@@ -15,9 +15,11 @@ header > div:first-child,
 header > div,
 .features > div{
     flex: 0 0 calc(85%/3);
-    padding: 5px;
+    padding: 5px ;
+}
 
-
+.features{
+    margin-top: 10px;
 }
 
 .features p{

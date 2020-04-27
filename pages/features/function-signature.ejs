@@ -1,0 +1,29 @@
+<div class="features">
+    <div>Function signatures</div>
+    <div>
+        <pre><code>function multiply ( param1 : defaultValue, param2: defaultValue ) {
+    return param1 * param2;
+}
+// or
+const multiply = ( param1 : defaultValue, param2: defaultValue ) => param1 * param2 ;</code></pre>
+    </div>
+    <div>
+        // TODO
+    </div>
+    <div>
+         <pre><code>dynamic multiply ( var param1, var param2 ) {
+ return param1 * param2;
+ }
+//or with named parameters
+dynamic multiply ( var param1, {var param2}) {
+ return param1 * (param2 ?? 1);
+}
+
+//or default value parameter named parameters
+dynamic multiply ( var param1, var param2 = 1) {
+return param1 * param2;
+}
+
+</code></pre>
+    </div>
+</div>
