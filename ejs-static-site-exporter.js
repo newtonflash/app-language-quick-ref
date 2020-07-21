@@ -20,7 +20,7 @@ function ejs2html(sourceFilePath, destinationDirectory, contextConfig) {
 
 
 const generateHTML = (srcPath , destPath) => {
-    ejs2html(__dirname + "/pages/index.ejs", '../../apps/js-python-dart/');
+    ejs2html(__dirname + "/pages/index.ejs", './build/');
 };
 
 
