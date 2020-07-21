@@ -1,4 +1,4 @@
 module.exports =  config = {
-    localBuildPath: "../../apps/js-python-dart",
+    localBuildPath: "./build/",
     staticFilesPath : './public/'
 };

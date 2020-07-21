@@ -32,6 +32,6 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWSACCESSKEYID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETKEY }}
         AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
-        SOURCE_DIR: '../../apps/js-python-dart'      # optional: defaults to entire repository  
+        SOURCE_DIR: './build/'      # optional: defaults to entire repository
         DEST_DIR: '/apps/js-python-dart/'    
         
